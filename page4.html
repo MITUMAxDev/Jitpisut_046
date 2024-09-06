@@ -1,90 +1,284 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Documentation</title>
-<link rel="icon" type="image/x-icon" href="multimedia/moon code.png">
-<script type="text/javascript">
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
 
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-</script>
-<style type="text/css">
-body,td,th {
-	font-family: "FC Defragment [Non-commercial]";
-}
-p {
-	font-size: 36px;
-	text-align: center;
-}
-body table tr td table tr td {
-	font-size: 50px;
-	color: #FFF;
-}
-.header {
-	font-family: "FC Defragment [Non-commercial]";
-	font-size: 50px;
-	font-style: normal;
-	font-weight: bolder;
-}
-</style>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Documentation</title>
+  <link rel="icon" type="image/x-icon" href="multimedia/moon code.png">
+  <script type="text/javascript">
+    function MM_preloadImages() { //v3.0
+      var d = document; if (d.images) {
+        if (!d.MM_p) d.MM_p = new Array();
+        var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
+          if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+      }
+    }
+    function MM_swapImgRestore() { //v3.0
+      var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+    }
+    function MM_findObj(n, d) { //v4.01
+      var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+        d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+      }
+      if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+      for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+      if (!x && d.getElementById) x = d.getElementById(n); return x;
+    }
+
+    function MM_swapImage() { //v3.0
+      var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2); i += 3)
+        if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
+    }
+  </script>
+  <style type="text/css">
+    body,
+    td,
+    th {
+      font-family: "FC Defragment [Non-commercial]";
+    }
+
+    p {
+      font-size: 36px;
+      text-align: center;
+    }
+
+    body table tr td table tr td {
+      font-size: 50px;
+      color: #FFF;
+    }
+
+    .header {
+      font-family: "FC Defragment [Non-commercial]";
+      font-size: 50px;
+      font-style: normal;
+      font-weight: bolder;
+    }
+  </style>
 </head>
 
-<body background="multimedia/91KRb2LaQlL.jfif" onload="MM_preloadImages('multimedia/HOMEPAGE-Click.png','multimedia/task-Clicked.png','multimedia/add-task-Clicked.png','multimedia/manage-task-Clicked.png','multimedia/settings-Clicked.png')"><table width="1801" height="936" border="1" align="center">
-  <tr>
-    <td height="307" colspan="2"><code><img src="multimedia/TUMARAI.png" width="1777" height="300" /></code></td>
-  </tr>
-  <tr>
-    <td width="311" height="561" align="center" valign="top"><table width="254" height="587" border="1">
-      <tr>
-        <td width="242" height="112"><code><a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('homepage','','multimedia/HOMEPAGE-Click.png',1)"><img src="multimedia/HOMEPAGE.png" width="300" height="100" id="homepage" /></a></code></td>
-      </tr>
-      <tr>
-        <td height="115"><code><a href="page2.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('task-list','','multimedia/task-Clicked.png',1)"><img src="multimedia/task.png" width="300" height="100" id="task-list" /></a></code></td>
-      </tr>
-      <tr>
-        <td height="112"><code><a href="page3.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('add-task','','multimedia/add-task-Clicked.png',1)"><img src="multimedia/add-task.png" width="300" height="100" id="add-task" /></a></code></td>
-      </tr>
-      <tr>
-        <td height="109"><code><a href="page4.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('manage','','multimedia/manage-task-Clicked.png',1)"><img src="multimedia/manage-task.png" width="300" height="100" id="manage" /></a></code></td>
-      </tr>
-      <tr>
-        <td height="125"><code><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('setting','','multimedia/settings-Clicked.png',1)"><img src="multimedia/settings.png" width="300" height="100" id="setting" /></a></code></td>
-      </tr>
-    </table></td>
-    <td width="1474" align="center" valign="top">
-      <table width="666" border="0" style="margin-left: auto; margin-right: auto;">
-      <tr>
-        <td width="660" height="172">Document</td>
-      </tr>
-    </table>
-    <table width="auto" height="auto" border="1" style="margin-left: 5%; margin-right: auto;">
-      <tr>
-        <video width="720" src="multimedia/Ep.1 เข้าใจภาษา Lua ใน 3 นาที เบาและเร็วกว่า Python - สาระเดฟใน 3 นาที Season 2.mp4"></video>
-      </tr>
-    </table>    <p class="header">&nbsp;</p></td>
-  </tr>
-  <tr>
-    <td colspan="2"><code class="header"></code></td>
-  </tr>
-</table>
+<body background="multimedia/91KRb2LaQlL.jfif"
+  onload="MM_preloadImages('multimedia/HOMEPAGE-Click.png','multimedia/task-Clicked.png','multimedia/add-task-Clicked.png','multimedia/manage-task-Clicked.png','multimedia/settings-Clicked.png')">
+  <table width="1801" height="936" border="1" align="center">
+    <tr>
+      <td height="307" colspan="2"><code><img src="multimedia/TUMARAI.png" width="1777" height="300" /></code></td>
+    </tr>
+    <tr>
+      <td width="311" height="561" align="center" valign="top">
+        <table width="254" height="587" border="1">
+          <tr>
+            <td width="242" height="112">
+              <code><a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('homepage','','multimedia/HOMEPAGE-Click.png',1)"><img src="multimedia/HOMEPAGE.png" width="300" height="100" id="homepage" /></a></code>
+            </td>
+          </tr>
+          <tr>
+            <td height="115">
+              <code><a href="page2.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('task-list','','multimedia/task-Clicked.png',1)"><img src="multimedia/task.png" width="300" height="100" id="task-list" /></a></code>
+            </td>
+          </tr>
+          <tr>
+            <td height="112">
+              <code><a href="page3.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('add-task','','multimedia/add-task-Clicked.png',1)"><img src="multimedia/add-task.png" width="300" height="100" id="add-task" /></a></code>
+            </td>
+          </tr>
+          <tr>
+            <td height="109">
+              <code><a href="page4.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('manage','','multimedia/manage-task-Clicked.png',1)"><img src="multimedia/manage-task.png" width="300" height="100" id="manage" /></a></code>
+            </td>
+          </tr>
+          <tr>
+            <td height="125">
+              <code><a href="page5.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('setting','','multimedia/settings-Clicked.png',1)"><img src="multimedia/settings.png" width="300" height="100" id="setting" /></a></code>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td width="1474" align="center" valign="top">
+        <table width="666" border="0" style="margin-left: 550px; margin-right: auto;">
+          <tr>
+            <td width="660" height="172">Document</td>
+          </tr>
+        </table>
+        <table width="auto" height="auto" border="1" style="margin-left: 5%; margin-right: auto;">
+          <tr>
+            <video width="720" height="auto" controls>
+              <source src="multimedia/Lua in 100 Seconds.mp4" type="video/mp4">
+              Your browser does not support the video tag
+            </video>
+            <p style="color: #FFF; font-size: 20px;">คลิปจาก Youtube: <a style="color: cadetblue;" href="https://youtu.be/jUuqBZwwkQw?si=fDLvTqmsFfwUdDdE">Lua in 100 Seconds</a></p>
+        </table>
+
+        <table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; border: 2px solid #4961e9; width: 100%;">
+          <div class="docs" style="padding: 20px;">
+            <h2 style="color: #4961e9; text-align: center;">การเรียนรู้ภาษา Lua เบื้องต้น</h2>
+            
+            <p style="font-size: 16px; line-height: 1.5; color: #e6e6e6;">
+              Lua เป็นภาษาโปรแกรมที่มีน้ำหนักเบาและใช้ในการฝังตัวในเกมและแอปพลิเคชันหลายๆ ประเภท ถูกออกแบบให้ใช้งานง่ายและสามารถขยายได้ มาดูหัวข้อสำคัญที่จำเป็นต้องรู้กัน!
+            </p>
+        
+            <!-- Section: ตัวแปรและชนิดข้อมูล -->
+            <h3 style="color: #4961e9;">1. ตัวแปรและชนิดข้อมูล (Variables and Data Types)</h3>
+            <p style="font-size: 16px; line-height: 1.5; color: #e6e6e6;">
+              Lua มีชนิดข้อมูลพื้นฐานดังนี้: <strong>nil, boolean, number, string, function, userdata, thread, table</strong>
+            </p>
+            <ul style="font-size: 16px; line-height: 1.5; color: #e6e6e6;">
+              <li><strong>nil</strong> - ค่าที่ไม่มีข้อมูล</li>
+              <li><strong>boolean</strong> - ค่าความจริง (true/false)</li>
+              <li><strong>number</strong> - ตัวเลข (ทั้งจำนวนเต็มและทศนิยม)</li>
+              <li><strong>string</strong> - ข้อความ</li>
+              <li><strong>table</strong> - โครงสร้างข้อมูลที่ยืดหยุ่น</li>
+            </ul>
+        
+            <pre style="background-color: #d1d1d1; padding: 10px; border-left: 5px solid #4961e9;">
+              <code>
+        -- ตัวอย่างการประกาศตัวแปร
+        local isTrue = true    -- ตัวแปร boolean
+        local number = 123     -- ตัวแปร number
+        local text = "Hello!"  -- ตัวแปร string
+              </code>
+            </pre>
+        
+            <!-- Section: ฟังก์ชัน -->
+            <h3 style="color: #4961e9;">2. ฟังก์ชัน (Functions)</h3>
+            <p style="font-size: 16px; line-height: 1.5; color: #e6e6e6;">
+              ฟังก์ชันเป็นกลไกสำคัญใน Lua ที่ช่วยให้เราสามารถทำให้โค้ดมีการทำงานซ้ำๆ ได้ง่ายขึ้น:
+            </p>
+        
+            <pre style="background-color: #d1d1d1; padding: 10px; border-left: 5px solid #4961e9;">
+              <code>
+        -- ฟังก์ชันที่เพิ่มตัวเลขสองตัว
+        function add(a, b)
+          return a + b
+        end
+        
+        local result = add(5, 3)
+        print(result)  -- ผลลัพธ์: 8
+              </code>
+            </pre>
+        
+            <!-- Section: ตาราง (Table) -->
+            <h3 style="color: #4961e9;">3. ตาราง (Table)</h3>
+            <p style="font-size: 16px; line-height: 1.5; color: #e6e6e6;">
+              ตาราง (Table) ใน Lua เป็นโครงสร้างข้อมูลที่ยืดหยุ่นมากที่สุด มันสามารถทำงานได้ทั้งแบบอาร์เรย์และแผนที่:
+            </p>
+        
+            <p style="font-size: 16px; line-height: 1.5; color: #e6e6e6;">
+              ตัวอย่างการใช้ตารางเป็นอาร์เรย์:
+            </p>
+            <pre style="background-color: #d1d1d1; padding: 10px; border-left: 5px solid #4961e9;">
+              <code>
+        -- ตารางแบบอาร์เรย์
+        local fruits = {"apple", "banana", "orange"}
+        print(fruits[1])  -- ผลลัพธ์: apple
+              </code>
+            </pre>
+        
+            <p style="font-size: 16px; line-height: 1.5; color: #e6e6e6;">
+              ตัวอย่างการใช้ตารางเป็นแผนที่:
+            </p>
+            <pre style="background-color: #d1d1d1; padding: 10px; border-left: 5px solid #4961e9;">
+              <code>
+        -- ตารางแบบแผนที่
+        local person = {
+          name = "John",
+          age = 30
+        }
+        print(person.name)  -- ผลลัพธ์: John
+              </code>
+            </pre>
+        
+            <!-- Section: ลูป (Loops) -->
+            <h3 style="color: #4961e9;">4. ลูป (Loops)</h3>
+            <p style="font-size: 16px; line-height: 1.5; color: #e6e6e6;">
+              Lua มีการใช้ลูปเพื่อทำงานซ้ำ เช่น <code>for</code>, <code>while</code>, และ <code>repeat</code>:
+            </p>
+        
+            <pre style="background-color: #d1d1d1; padding: 10px; border-left: 5px solid #4961e9;">
+              <code>
+        -- ตัวอย่างการใช้ for loop
+        for i = 1, 5 do
+          print(i)
+        end
+        -- ผลลัพธ์: 1 2 3 4 5
+              </code>
+            </pre>
+        
+            <!-- Section: เงื่อนไข (Conditionals) -->
+            <h3 style="color: #4961e9;">5. เงื่อนไข (Conditionals)</h3>
+            <p style="font-size: 16px; line-height: 1.5; color: #e6e6e6;">
+              Lua ใช้ <code>if</code>, <code>elseif</code> และ <code>else</code> สำหรับการตรวจสอบเงื่อนไข:
+            </p>
+        
+            <pre style="background-color: #d1d1d1; padding: 10px; border-left: 5px solid #4961e9;">
+              <code>
+        local score = 85
+        if score >= 90 then
+          print("ยอดเยี่ยม!")
+        elseif score >= 80 then
+          print("ดีมาก!")
+        else
+          print("พยายามอีกครั้ง!")
+        end
+        -- ผลลัพธ์: ดีมาก!
+              </code>
+            </pre>
+        
+            <!-- Section: การเขียนและอ่านไฟล์ -->
+            <h3 style="color: #4961e9;">6. การเขียนและอ่านไฟล์ (File I/O)</h3>
+            <p style="font-size: 16px; line-height: 1.5; color: #e6e6e6;">
+              Lua สามารถทำงานกับไฟล์ได้ง่ายๆ ด้วยการเปิดไฟล์เพื่ออ่านหรือเขียน:
+            </p>
+        
+            <pre style="background-color: #d1d1d1; padding: 10px; border-left: 5px solid #4961e9;">
+              <code>
+        -- การเขียนไฟล์
+        local file = io.open("test.txt", "w")
+        file:write("Hello, Lua!")
+        file:close()
+        
+        -- การอ่านไฟล์
+        local file = io.open("test.txt", "r")
+        local content = file:read("*all")
+        print(content)  -- ผลลัพธ์: Hello, Lua!
+        file:close()
+              </code>
+            </pre>
+        
+            <!-- Section: Error Handling -->
+            <h3 style="color: #4961e9;">7. การจัดการข้อผิดพลาด (Error Handling)</h3>
+            <p style="font-size: 16px; line-height: 1.5; color: #e6e6e6;">
+              Lua มีฟังก์ชัน <code>pcall</code> และ <code>xpcall</code> สำหรับการจัดการข้อผิดพลาด:
+            </p>
+        
+            <pre style="background-color: #d1d1d1; padding: 10px; border-left: 5px solid #4961e9;">
+              <code>
+        -- การใช้ pcall เพื่อตรวจจับข้อผิดพลาด
+        local status, err = pcall(function()
+          error("เกิดข้อผิดพลาด!")
+        end)
+        
+        if not status then
+          print("Error:", err)
+        end
+              </code>
+            </pre>
+        
+            <!-- Conclusion -->
+            <p style="font-size: 16px; line-height: 1.5; color: #e6e6e6; text-align: center;">
+              นี่เป็นเพียงพื้นฐานของภาษา Lua! หากคุณต้องการเขียนโปรแกรมใน Lua ให้คล่อง ควรฝึกฝนและเรียนรู้เพิ่มเติมจากแหล่งข้อมูลต่างๆ
+            </p>
+          </div>
+        </table>
+        
+
+        <p class="header">&nbsp;</p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2"><code class="header"></code></td>
+    </tr>
+  </table>
 
 </body>
+
 </html>
