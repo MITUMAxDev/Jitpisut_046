@@ -70,22 +70,159 @@ body table tr td table tr td {
       </tr>
     </table></td>
     <td width="1474" align="center" valign="top">
-      <table width="666" border="0" style="margin-left: auto; margin-right: auto;">
-      <tr>
-        <td width="660" height="172">ตัวอย่างการใช้งานภาษา Lua</td>+
-        
-      </tr>
-      <table style="color: #FFF; background-color: #222d31;">
-        <tr>
-          <td style="padding: 10px;">
-            <pre style="font-size: 17px; text-align: left;">
-<a style="color: darkgray;"> -- Lua Code</a>                    
-<a style="color: yellow;">print</a>(<a style="color: orange;">"Hello World"</a>)
-            </pre>
-          </td>
-        </tr>
-      </table>
-    </table>
+      <!-- สไตล์เพิ่มเติมสำหรับการตกแต่ง (ยังคงใช้เดิม) -->
+<style>
+  /* สไตล์ตารางและข้อความ */
+  table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+  }
+
+  td {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px;
+    color: #333;
+  }
+
+  /* ตกแต่งหัวข้อ */
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+  }
+
+  /* สไตล์สำหรับตัวอย่างโค้ด */
+  .code-container {
+    background-color: #222d31;
+    color: #FFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .code-container pre {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+    text-align: left;
+    color: #FFF;
+  }
+
+  .code-comment {
+    color: darkgray;
+  }
+
+  .code-keyword {
+    color: rgb(197, 170, 81);
+  }
+
+  .code-string {
+    color: rgb(230, 139, 86);
+  }
+
+  .code-number {
+    color: lightblue;
+  }
+
+  /* จัดกล่องตัวอย่างโค้ดให้อยู่ตรงกลาง */
+  .example-section {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+</style>
+
+<!-- เพิ่มเนื้อหา -->
+<div class="example-section">
+  <h2>ตัวอย่างการใช้งานภาษา Lua</h2>
+  <table>
+    <tr>
+      <td>
+        <p>Lua เป็นภาษาที่ใช้งานง่าย เหมาะสำหรับผู้เริ่มต้นและผู้ที่ต้องการสร้างสคริปต์อย่างรวดเร็ว นี่คือตัวอย่างต่างๆ ของการใช้งานภาษา Lua:</p>
+      </td>
+    </tr>
+  </table>
+
+  <!-- ตัวอย่าง 1: Hello World -->
+  <h3 style="color: #d4d4d4;">ตัวอย่างที่ 1: Hello World</h3>
+  <div class="code-container">
+    <pre>
+<span class="code-comment">-- ตัวอย่างการใช้ print</span>                    
+<span class="code-keyword">print</span>(<span class="code-string">"Hello World"</span>)
+    </pre>
+  </div>
+
+  <!-- ตัวอย่าง 2: การใช้ตัวแปร -->
+  <h3 style="color: #d4d4d4;">ตัวอย่างที่ 2: การใช้ตัวแปร</h3>
+  <div class="code-container">
+    <pre>
+<span class="code-comment">-- การประกาศตัวแปรและการใช้</span>
+<span class="code-keyword">local</span> x = <span class="code-number">10</span>
+<span class="code-keyword">local</span> y = <span class="code-number">20</span>
+<span class="code-keyword">local</span> sum = x + y
+<span class="code-keyword">print</span>(<span class="code-string">"ผลรวมของ x และ y คือ "</span> .. sum)
+    </pre>
+  </div>
+
+  <!-- ตัวอย่าง 3: การใช้เงื่อนไข -->
+  <h3 style="color: #d4d4d4;">ตัวอย่างที่ 3: การใช้เงื่อนไข</h3>
+  <div class="code-container">
+    <pre>
+<span class="code-comment">-- การใช้ if-else</span>
+<span class="code-keyword">local</span> score = <span class="code-number">85</span>
+
+<span class="code-keyword">if</span> score >= <span class="code-number">90</span> <span class="code-keyword">then</span>
+  <span class="code-keyword">print</span>(<span class="code-string">"A"</span>)
+<span class="code-keyword">elseif</span> score >= <span class="code-number">80</span> <span class="code-keyword">then</span>
+  <span class="code-keyword">print</span>(<span class="code-string">"B"</span>)
+<span class="code-keyword">else</span>
+  <span class="code-keyword">print</span>(<span class="code-string">"C"</span>)
+<span class="code-keyword">end</span>
+    </pre>
+  </div>
+
+  <!-- ตัวอย่าง 4: การใช้ loop -->
+  <h3 style="color: #d4d4d4;">ตัวอย่างที่ 4: การใช้ loop</h3>
+  <div class="code-container">
+    <pre>
+<span class="code-comment">-- การใช้ for-loop</span>
+<span class="code-keyword">for</span> i = <span class="code-number">1</span>, <span class="code-number">5</span> <span class="code-keyword">do</span>
+  <span class="code-keyword">print</span>(<span class="code-string">"ค่า i: "</span> .. i)
+<span class="code-keyword">end</span>
+    </pre>
+  </div>
+
+  <!-- ตัวอย่าง 5: การใช้ฟังก์ชัน -->
+  <h3 style="color: #d4d4d4;">ตัวอย่างที่ 5: การใช้ฟังก์ชัน</h3>
+  <div class="code-container">
+    <pre>
+<span class="code-comment">-- การสร้างฟังก์ชันใน Lua</span>
+<span class="code-keyword">function</span> greet(name)
+  <span class="code-keyword">print</span>(<span class="code-string">"สวัสดี, "</span> .. name)
+<span class="code-keyword">end</span>
+
+greet(<span class="code-string">"Lua Programmer"</span>)
+    </pre>
+  </div>
+
+  <!-- ตัวอย่าง 6: การใช้ตาราง (table) -->
+  <h3 style="color: #d4d4d4;">ตัวอย่างที่ 6: การใช้ตาราง (table)</h3>
+  <div class="code-container">
+    <pre>
+<span class="code-comment">-- การสร้างและใช้งานตาราง</span>
+<span class="code-keyword">local</span> fruits = {<span class="code-string">"apple"</span>, <span class="code-string">"banana"</span>, <span class="code-string">"cherry"</span>}
+    
+<span class="code-keyword">for</span> i = <span class="code-number">1</span>, #fruits <span class="code-keyword">do</span>
+  <span class="code-keyword">print</span>(fruits[i])
+<span class="code-keyword">end</span>
+    </pre>
+  </div>
+  <table>
+   <img src="multimedia/c4a7tf0rghlz.jpg" alt="error">
+  </table>
     <p class="header">&nbsp;</p></td>
   </tr>
   <tr>
